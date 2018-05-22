@@ -19,5 +19,7 @@ describe('Employee Row Component: ', () => {
     expect(component).toContainReact(<td>fflintstone</td>);
     expect(component).toContainReact(<td>Yes</td>);
     expect(component).toContainReact(<td>Gloomhaven</td>);
+
+    expect(component.find('td')).toHaveLength(6);
   });
 });

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class EmployeeRow extends Component {
-  // TODO - actually implement this for realz
+
   render() {
     const employee = this.props.employee;
 

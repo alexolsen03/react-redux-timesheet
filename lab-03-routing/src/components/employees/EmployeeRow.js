@@ -4,7 +4,18 @@ import PropTypes from 'prop-types';
 class EmployeeRow extends Component {
   // TODO - actually implement this for realz
   render() {
-    return <div />;
+    const employee = this.props.employee;
+
+    return (
+      <tr>
+        <td>{employee.username}</td>
+        <td>{employee.email}</td>
+        <td>{employee.firstName}</td>
+        <td>{employee.lastName}</td>
+        <td>{employee.admin ? 'Yes' : 'No'}</td>
+        <td>{employee.favGame}</td>
+      </tr>
+    );
   }
 }
 
